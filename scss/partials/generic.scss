@@ -1,0 +1,19 @@
+@import "../variables/variables";
+@media only screen and (max-width: 300px) {
+  .aviso img {
+    width: 150px;
+    height: 80px;
+  }
+
+  .parallax {
+    font-size: 3em;
+  }
+
+  .title-tarjetas h1 {
+    font-size: 2em;
+  }
+
+  .centrar {
+    font-size: 2em;
+  }
+}

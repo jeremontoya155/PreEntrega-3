@@ -74,13 +74,13 @@
 
       <form action="/action_page.php">
         <div class="mx-4">
-          <label for="nombre" class="form-label">Nombre</label>
+          <label for="email" class="form-label">Nombre</label>
           <input
             type="text"
             class="form-control"
-            id="nombre"
+            id="email"
             placeholder="Ingrese su nombre"
-            name="text"
+            name="email"
           />
         </div>
         <div class="mx-4">
@@ -90,7 +90,7 @@
             rows="5"
             id="comment"
             placeholder="Ingrese su comentario"
-            name="text"
+            name="comment"
           ></textarea>
         </div>
 
@@ -106,7 +106,7 @@
       <script>
         let btnEnvioC = document.getElementById("EnviarComentario");
         btnEnvioC.addEventListener("click", function (e) {
-          let vr1 = document.getElementById("nombre").value;
+          let vr1 = document.getElementById("email").value;
           let vr2 = document.getElementById("comment").value;
           window.location.href = `mailto:jeremontoya1555@gmail.com?&body=Nombre%3A${vr1}%0Comentario%3A${vr2}`;
         });
