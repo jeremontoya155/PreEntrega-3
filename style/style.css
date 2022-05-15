@@ -31,18 +31,19 @@
   .container-tarjeta img {
     width: 100%;
     height: 210px; }
-  .container-tarjeta .container-tarjeta {
+  .container-tarjeta .contenido-tarjeta {
     padding: 15px;
     text-align: center; }
-    .container-tarjeta .container-tarjeta h3 {
+    .container-tarjeta .contenido-tarjeta h3 {
       margin-bottom: 15px;
-      color: black; }
-    .container-tarjeta .container-tarjeta p {
+      color: black;
+      text-align: center; }
+    .container-tarjeta .contenido-tarjeta p {
       line-height: 1.8;
       color: black;
       font-size: 14px;
       margin-bottom: 5px; }
-    .container-tarjeta .container-tarjeta a {
+    .container-tarjeta .contenido-tarjeta a {
       display: inline-block;
       padding: 10px;
       margin-top: 10px;
@@ -52,7 +53,7 @@
       border-radius: 4px;
       transition: all 400ms ease;
       margin-bottom: 5px; }
-    .container-tarjeta .container-tarjeta a:hover {
+    .container-tarjeta .contenido-tarjeta a:hover {
       background: rgba(233, 152, 12, 0.882);
       color: #0d0994; }
 
@@ -64,8 +65,124 @@
   .tarjeta {
     margin: 15px; } }
 
+.superior {
+  background-image: linear-gradient(to right, rgba(233, 152, 12, 0.882), rgba(204, 132, 8, 0.881), rgba(161, 104, 6, 0.881), rgba(135, 90, 11, 0.881), rgba(72, 47, 4, 0.881));
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 2em;
+  flex-wrap: wrap; }
+
+.superior span {
+  border: 2px dashed black;
+  padding: 4em; }
+
+.superior a {
+  text-decoration: none;
+  color: #342828;
+  font-size: 1.5em; }
+
+.superior span:hover {
+  background-image: linear-gradient(to left, rgba(233, 152, 12, 0.882), rgba(204, 132, 8, 0.881), rgba(161, 104, 6, 0.881), rgba(135, 90, 11, 0.881), rgba(72, 47, 4, 0.881)); }
+
+.respuestas {
+  text-align: center; }
+  .respuestas h2 {
+    text-align: center;
+    font-size: 3em; }
+  .respuestas #arte {
+    animation: fadeInDown;
+    animation-duration: 2s; }
+  .respuestas #somos {
+    animation: fadeInDown;
+    animation-duration: 6s; }
+  .respuestas #porque {
+    animation: fadeInDown;
+    animation-duration: 10s; }
+  .respuestas .imgNosotros {
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media only screen and (max-width: 650px) {
+  .superior span {
+    border: 2px dashed black;
+    width: 100%;
+    height: 100%; } }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+  animation: lista 4s infinite; }
+
+.mover {
+  font-size: 4em;
+  animation: fadeIn;
+  animation-duration: 4s;
+  font-family: "Courier New", Courier, monospace; }
+
+.aviso {
+  display: flex;
+  justify-content: center; }
+
+.centrar {
+  text-align: center;
+  font-size: 3.5em; }
+
+.proximas p {
+  font-size: 1.4em; }
+
+nav {
+  background-image: linear-gradient(to right, rgba(238, 224, 201, 0.882), rgba(240, 218, 181, 0.881), rgba(246, 214, 161, 0.881), rgba(243, 193, 106, 0.881), rgba(245, 181, 71, 0.881)); }
+
+@media only screen and (max-width: 300px) {
+  .aviso img {
+    width: 150px;
+    height: 80px; }
+  .parallax {
+    font-size: 3em; }
+  .title-tarjetas h1 {
+    font-size: 2em; }
+  .centrar {
+    font-size: 2em; } }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  border: 1px solid black;
+  background-image: linear-gradient(to left, rgba(234, 153, 12, 0.881), rgba(204, 132, 8, 0.881), rgba(161, 104, 6, 0.881), rgba(135, 90, 11, 0.881), rgba(72, 47, 4, 0.881)); }
+  footer p {
+    text-align: center;
+    font-size: medium; }
+  footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  footer .imgF {
+    width: 2em;
+    height: auto; }
+
+footer:hover {
+  background-image: linear-gradient(to right, rgba(234, 153, 12, 0.881), rgba(204, 132, 8, 0.881), rgba(161, 104, 6, 0.881), rgba(135, 90, 11, 0.881), rgba(72, 47, 4, 0.881)); }
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+body {
+  background-color: rgba(234, 223, 205, 0.881); }
+
+.parallax {
+  background-image: url("../images/textura.jpg");
+  height: 25vh;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 6em; }
