@@ -151,6 +151,24 @@ nav {
   .centrar {
     font-size: 2em; } }
 
+.trabajo {
+  text-align: center; }
+  .trabajo h2 {
+    font-size: 2em;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    margin-top: 1.1em;
+    margin-bottom: 1.2em; }
+  .trabajo h3 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .trabajo h3 a {
+      text-decoration: none;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande"; }
+    .trabajo h3 a:hover {
+      font-size: 3em;
+      color: rgba(233, 152, 12, 0.882); }
+
 footer {
   width: 100%;
   position: relative;

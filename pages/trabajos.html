@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sitio Web UDAIC" />
-    <meta name="keywords" content="Asociaciones artesania grupos" />
-    <title>Comenta</title>
+    <meta name="description" content="Sitio Web UDAIC area de trabajos" />
+    <meta
+      name="keywords"
+      content="Asociaciones artesania grupos trabajos artesanales"
+    />
+    <meta name="author" content="Jeremias Montoya" />
+    <meta name="copyright" content="Jeremias Montoya" />
+    <meta name="robots" content="index,follow" />
+
+    <title>Artesanos</title>
     <link rel="icon" type="image/png" href="../images/favicon.jpg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,7 +24,7 @@
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html"
           ><img src="../images/navBar.png" alt=""
@@ -47,7 +54,7 @@
               <a class="nav-link" href="ingresa.html">Ingresa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="comenta.html">Comenta</a>
+              <a class="nav-link active" href="trabajos.html">Trabajos</a>
             </li>
           </ul>
         </div>
@@ -68,48 +75,43 @@
 
     <main class="proximas">
       <div class="title-tarjetas">
-        <h1 class="mover">COMUNICATE</h1>
+        <h1 class="mover">Nuestros Trabajos</h1>
       </div>
 
-      <form action="/action_page.php">
-        <div class="mx-4">
-          <label for="email" class="form-label">Nombre:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="email"
-            placeholder="Ingrese su nombre"
-            name="email"
-          />
-        </div>
-        <div class="mx-4">
-          <label for="comment">Envianos tu comentario:</label>
-          <textarea
-            class="form-control"
-            rows="5"
-            id="comment"
-            placeholder="Ingrese su comentario"
-            name="comment"
-          ></textarea>
-        </div>
+      <div class="trabajo">
+        <h2>Trabajos Ceramica</h2>
+        <iframe
+          width="500em"
+          height="368em"
+          src="https://www.youtube.com/embed/JrVY1POThD0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-        <button
-          id="EnviarComentario"
-          type="submit"
-          class="btn btn-warning mx-4 my-2"
-        >
-          <a href="#">Enviar</a>
-        </button>
-      </form>
+      <div class="trabajo">
+        <h2>Trabajos Madera</h2>
+        <iframe
+          width="500em"
+          height="368em"
+          src="https://www.youtube.com/embed/PkLa_i7WfU4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-      <script>
-        let btnEnvioC = document.getElementById("EnviarComentario");
-        btnEnvioC.addEventListener("click", function (e) {
-          let vr1 = document.getElementById("email").value;
-          let vr2 = document.getElementById("comment").value;
-          window.location.href = `mailto:jeremontoya1555@gmail.com?&body=Nombre%3A${vr1}%0Comentario%3A${vr2}`;
-        });
-      </script>
+      <span class="trabajo">
+        <h3>
+          <a
+            href="https://www.youtube.com/channel/UCOK6I-H7XiQco8-4PkT3gaA/videos"
+            >SEGUI MIRANDO</a
+          >
+        </h3>
+      </span>
     </main>
     <footer>
       <p>NUESTRAS REDES</p>
